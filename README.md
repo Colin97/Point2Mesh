@@ -3,9 +3,10 @@
 
 Codes for Meshing Point Clouds with Predicted Intrinsic-Extrinsic Ratio Guidance (ECCV2020).
 
+![](/teaser.jpg)
+
 We propose a novel mesh reconstruction method that leverages the input point cloud as much as possible, by predicting which triplets of points should form faces. Our key innovation is a surrogate of local connectivity, calculated by comparing the intrinsic/extrinsic metrics. We learn to classify the candidate triangles using a deep network and then feed the results to a post-processing module for mesh generation. Our method can not only preserve fine-grained details, handle ambiguous structures, but also possess strong generalizability to unseen categories.
 
-![](/teaser.jpg)
 
 Codes will be available soon...
 

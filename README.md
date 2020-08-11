@@ -1,7 +1,6 @@
 # Meshing-Point-Clouds-with-IER
-[[paper](https://arxiv.org/pdf/2007.09267.pdf)]
-
 Codes for Meshing Point Clouds with Predicted Intrinsic-Extrinsic Ratio Guidance (ECCV2020).
+[[paper](https://arxiv.org/pdf/2007.09267.pdf)]
 
 ![](/teaser.jpg)
 

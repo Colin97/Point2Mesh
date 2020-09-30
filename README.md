@@ -8,9 +8,9 @@ We propose a novel mesh reconstruction method that leverages the input point clo
 
 ### 0. Envrionment & Prerequisites.
 0) Environment:
-	PyTorch 1.3.1
-	Python 3.6
-	Cuda 10.0
+	- PyTorch 1.3.1
+	- Python 3.6
+	- Cuda 10.0
 
 1) Download submodules [annoy](https://github.com/spotify/annoy/) and [SparseConvNet(0.2)](https://github.com/facebookresearch/SparseConvNet/) and install SparseConvNet:
 

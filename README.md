@@ -43,7 +43,7 @@ cd ..
 ```
 Then, you can post-process all the demo shapes with `run_demo.py` or post-process a single shape with `main.py`. You can find the generated demo meshes at `log/shapenet_pretrained/test_demo/output_mesh`.
 
-### 4. Train your network.
+### 4. Train your own network.
 You can download all the pickle files for the full ShapeNet dataset from [here](https://drive.google.com/drive/folders/1Wb-mU3mcxpKAQyb7LqqQYKbfnpmDXSiZ?usp=sharing)(23,108 shapes, ~42.2GB). Then use `network/train.py` to train your own network.
 
 ### 5. Generate your own training data.
@@ -82,9 +82,9 @@ make
 cd ..
 ```
 
-Then, you can use `main.py` to generate the picke file for a single shape or use `run_demo.py` to generate the pickle files for all the demo point clouds. The total runtime for each shape may take less than one minute. You can use multiple processes to accelerate. Please note that, in this way, the candidate labels in the pickle files will be set to -1.
+Then, you can use `main.py` to generate the picke file for a single shape or use `run_demo.py` to generate the pickle files for all the demo point clouds. The total runtime for each shape may take less than one minute. You can use multiple processes to accelerate. Please note that, in this way, the candidate labels in the pickle files will be set to -1. 
 
-
+The input point cloud should contain 12,000 ~ 12,800 points (to best fit our pre-trained network). Using Poisson sampling as pre-processing can get evenly distributed point cloud and thus boost the performance. Currently, our method do not support very noisy point clouds.
 
 If you find our work useful for your research, please cite:
 

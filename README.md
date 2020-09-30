@@ -31,7 +31,7 @@ You can use `network/test.py` to classify the proposed candidate triangles. You 
 
 You can feed the pickle files and the predicted npy files into a post-process program to get output meshes.
 
-First, compile CPP codes:
+First, compile cpp codes:
 
 ```
 cd postprocess
@@ -50,7 +50,7 @@ You can download all the pickle files for the full ShapeNet dataset from [here](
 
 You can generate your own training data with gt mesh (ply). 
 
-First, compile the CPP code:
+First, compile the cpp code:
 
 ```
 cd preprocess_with_gt_mesh
@@ -72,7 +72,7 @@ In detail, the training data generation consists of several steps:
 ### 6. Generate pickle files with only point clouds.
 You can also generate pickle files with only point clouds (ply), so that you can feed the pickle files into the network and the postprocess program to get the final mesh. 
 
-First, compile the CPP code:
+First, compile the cpp code:
 ```
 cd preprocess_with_pc
 mkdir build

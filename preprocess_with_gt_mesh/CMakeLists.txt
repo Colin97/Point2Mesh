@@ -1,0 +1,6 @@
+set(CMAKE_CXX_FLAGS "-std=c++11 -O2")
+add_executable(preprocess_mesh preprocess_mesh.cpp Intersection.cpp)
+add_executable(sample_pc sample_pc.cpp)
+add_executable(calc_geo_dis calc_geo_dis.cpp Intersection.cpp)
+add_executable(propose_candidates propose_candidates.cpp Intersection.cpp)
+add_executable(calc_candidates_label calc_candidates_label.cpp)

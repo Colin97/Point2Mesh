@@ -1,0 +1,8 @@
+[submodule "annoy"]
+	path = annoy
+	url = https://github.com/spotify/annoy
+	branch = master
+[submodule "SparseConvNet"]
+	path = SparseConvNet
+	url = https://github.com/facebookresearch/SparseConvNet.git
+	branch = master

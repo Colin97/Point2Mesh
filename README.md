@@ -7,19 +7,19 @@ Codes for Meshing Point Clouds with Predicted Intrinsic-Extrinsic Ratio Guidance
 We propose a novel mesh reconstruction method that leverages the input point cloud as much as possible, by predicting which triplets of points should form faces. Our key innovation is a surrogate of local connectivity, calculated by comparing the intrinsic/extrinsic metrics. We learn to classify the candidate triangles using a deep network and then feed the results to a post-processing module for mesh generation. Our method can not only preserve fine-grained details, handle ambiguous structures, but also possess strong generalizability to unseen categories.
 
 ### 0. Envrionment & Prerequisites.
-0) Environment:
+a) Environment:
 	- PyTorch 1.3.1
 	- Python 3.6
 	- Cuda 10.0
 
-1) Download submodules [annoy](https://github.com/spotify/annoy/) and [SparseConvNet(0.2)](https://github.com/facebookresearch/SparseConvNet/) and install SparseConvNet:
+b) Download submodules [annoy](https://github.com/spotify/annoy/) and [SparseConvNet(0.2)](https://github.com/facebookresearch/SparseConvNet/) and install SparseConvNet:
 
 ```
 git submodule update --init --recursive
 cd SparseConvNet/
 sh develop.sh
 ```
-2) Install [plyfile](https://github.com/dranjan/python-plyfile), pickle, and tqdm with pip.
+c) Install [plyfile](https://github.com/dranjan/python-plyfile), pickle, and tqdm with pip.
 
 ### 1. Download pretrained models and demo data.
 You can download the pretrained model and demo data from [here](https://drive.google.com/drive/folders/1Wb-mU3mcxpKAQyb7LqqQYKbfnpmDXSiZ?usp=sharing) to get a quick look. Demo data includes ten shapes (both gt mesh and point cloud) and their pre-generated pickle files. The pickle files contain the point cloud vertices and proposed candidate triangles (vertex indices and gt labels). You can use the pickles files to train or test the network.

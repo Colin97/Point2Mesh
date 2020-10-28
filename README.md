@@ -19,7 +19,7 @@ git submodule update --init --recursive
 cd SparseConvNet/
 sh develop.sh
 ```
-**annoy 1.17 changed their API. Please download the [previous version].(https://github.com/spotify/annoy/archive/v1.16.zip)**
+**annoy 1.17 changed their API. Please download the [previous version](https://github.com/spotify/annoy/archive/v1.16.zip).**
 
 c) Install [plyfile](https://github.com/dranjan/python-plyfile), pickle, and tqdm with pip.
 

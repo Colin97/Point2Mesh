@@ -12,13 +12,15 @@ a) Environment:
 	- Python 3.6
 	- Cuda 10.0
 
-b) Download submodules [annoy](https://github.com/spotify/annoy/) and [SparseConvNet(0.2)](https://github.com/facebookresearch/SparseConvNet/) and install SparseConvNet:
+b) Download submodules [annoy(1.16)](https://github.com/spotify/annoy/) and [SparseConvNet(0.2)](https://github.com/facebookresearch/SparseConvNet/) and install SparseConvNet:
 
 ```
 git submodule update --init --recursive
 cd SparseConvNet/
 sh develop.sh
 ```
+**annoy 1.17 changed their API. Please download the [previous version].(https://github.com/spotify/annoy/archive/v1.16.zip)**
+
 c) Install [plyfile](https://github.com/dranjan/python-plyfile), pickle, and tqdm with pip.
 
 ### 1. Download pretrained models and demo data.
